@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table name="ADMIN" schema="ALUMNI">
+		<primary-key>
+			<generator class="sequence"></generator>
+			<key-column name="ID" type="java.lang.Integer" />
+		</primary-key>
+		<column name="ADMIN_NAME" type="java.lang.String"></column>
+		<column name="ADMIN_PASSWORD" type="java.lang.String"></column>
+	</table>
+	<table name="CITY" schema="ALUMNI">
+		<primary-key>
+			<generator class="sequence"></generator>
+			<key-column name="ID" type="java.lang.Integer" />
+		</primary-key>
+		<column name="CITY_NAME" type="java.lang.String"></column>
+		<column name="CITY_LETTER" type="java.lang.String"></column>
+	</table>
+	<table name="USERS" schema="ALUMNI">
+		<primary-key>
+			<generator class="sequence"></generator>
+			<key-column name="ID" type="java.lang.Integer" />
+		</primary-key>
+		<column name="USER_YEAR_ID" type="java.lang.Integer"></column>
+		<column name="USER_GRADE_ID" type="java.lang.Integer"></column>
+		<column name="USER_CLASS_ID" type="java.lang.Integer"></column>
+		<column name="USER_PROVINCE_ID" type="java.lang.Integer"></column>
+		<column name="USER_CITY_ID" type="java.lang.Integer"></column>
+		<column name="USER_INDUSTRY_ID" type="java.lang.Integer"></column>
+		<column name="USER_NAME" type="java.lang.String"></column>
+		<column name="USER_PASSWORD" type="java.lang.String"></column>
+		<column name="USER_PHONE" type="java.lang.String"></column>
+		<column name="USER_EMAIL" type="java.lang.String"></column>
+	</table>
+	<table name="CLASS" schema="ALUMNI">
+		<primary-key>
+			<generator class="sequence"></generator>
+			<key-column name="ID" type="java.lang.Integer" />
+		</primary-key>
+		<column name="CLASS" type="java.lang.Integer"></column>
+	</table>
+	<table name="GRADE" schema="ALUMNI">
+		<primary-key>
+			<generator class="sequence"></generator>
+			<key-column name="ID" type="java.lang.Integer" />
+		</primary-key>
+		<column name="GRADE" type="java.lang.String"></column>
+	</table>
+	<table name="INDUSTRY" schema="ALUMNI">
+		<primary-key>
+			<generator class="sequence"></generator>
+			<key-column name="ID" type="java.lang.Integer" />
+		</primary-key>
+		<column name="INDUSTRY_NAME" type="java.lang.String"></column>
+	</table>
+	<table name="PROVINCE" schema="ALUMNI">
+		<primary-key>
+			<generator class="sequence"></generator>
+			<key-column name="ID" type="java.lang.Integer" />
+		</primary-key>
+		<column name="PROVINCE_NAME" type="java.lang.String"></column>
+		<column name="PROVINCE_LETTER" type="java.lang.String"></column>
+	</table>
+	<table name="YEAR" schema="ALUMNI">
+		<primary-key>
+			<generator class="sequence"></generator>
+			<key-column name="ID" type="java.lang.Integer" />
+		</primary-key>
+		<column name="YEAR" type="java.lang.Integer"></column>
+	</table>
+	<table name="COMMENTS" schema="ALUMNI">
+		<primary-key>
+			<generator class="sequence"></generator>
+			<key-column name="ID" type="java.lang.Integer" />
+		</primary-key>
+		<column name="COMMENTS_USER_ID" type="java.lang.Integer"></column>
+		<column name="COMMENTS" type="java.lang.String"></column>
+	</table>
+	<table name="CLASSES" schema="ALUMNI">
+		<primary-key>
+			<generator class="sequence"></generator>
+			<key-column name="ID" type="java.lang.Integer" />
+		</primary-key>
+		<column name="CLASS_NUMBER" type="java.lang.Integer"></column>
+	</table>
+	<table name="NEWS" schema="ALUMNI">
+		<primary-key>
+			<generator class="sequence"></generator>
+			<key-column name="ID" type="java.lang.Integer" />
+		</primary-key>
+		<column name="NEWS_TITLE" type="java.lang.String"></column>
+		<column name="NEWS_PICTURE" type="java.lang.String"></column>
+		<column name="NEWS_DESCRIPTION" type="java.lang.String"></column>
+	</table>
+</hibernate-reverse-engineering>
