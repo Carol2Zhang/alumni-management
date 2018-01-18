@@ -8,7 +8,9 @@
     <class name="com.alumni.entity.Users" table="USERS" schema="ALUMNI">
         <id name="id" type="java.lang.Integer">
             <column name="ID" precision="22" scale="0" />
-            <generator class="sequence"></generator>
+            <generator class="sequence">
+            	<param name="sequence">SEQ_USERS</param>
+            </generator>
         </id>
         <many-to-one name="classes" class="com.alumni.entity.Classes" fetch="select">
             <column name="USER_CLASS_ID" precision="22" scale="0" />

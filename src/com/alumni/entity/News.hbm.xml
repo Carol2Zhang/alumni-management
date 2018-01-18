@@ -8,7 +8,9 @@
     <class name="com.alumni.entity.News" table="NEWS" schema="ALUMNI">
         <id name="id" type="java.lang.Integer">
             <column name="ID" precision="22" scale="0" />
-            <generator class="sequence"></generator>
+            <generator class="sequence">
+            	<param name="sequence">SEQ_NEWS</param>
+            </generator>
         </id>
         <property name="newsTitle" type="java.lang.String">
             <column name="NEWS_TITLE" length="30" />
